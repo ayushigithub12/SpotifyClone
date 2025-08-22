@@ -1,29 +1,33 @@
-🎵 Spotify Clone (LLD using Design Patterns)
-A Java-based Spotify Clone built with a strong focus on Low-Level Design (LLD) principles and System Design Patterns.
-This project demonstrates how design patterns can be applied to build a scalable and extensible music player application without using databases or external frameworks.
+# 🎵 Spotify Clone (LLD-Based Music Player)
 
+This project is a **Low-Level Design (LLD) implementation** of a simplified Spotify-like music player system.  
+It demonstrates **system design patterns**, including Singleton, Strategy, Factory, and more, without using a database.  
+The application simulates music library management, playlist creation, device connections, and flexible playback strategies.
 
-🚀 Features
-🎶 Song Library Management
-Add songs with title, artist, and file path.
-Store and manage them in a central library.
-📂 Playlist Management
-Create playlists.
-Add/remove songs from playlists.
-Load a playlist for playback.
-🎧 Device Connectivity
-Connect different audio devices (e.g., Bluetooth, Wired).
-▶️ Music Controls
-Play, pause, resume a song.
-Skip to the next track.
-Play the previous track.
-🔀 Playback Strategies (Strategy Pattern)
-Sequential Playback – play songs in order.
-Random Playback – shuffle songs randomly.
-Custom Queue Playback – user-defined queue order.
-🏗 Design Patterns Used
-Singleton Pattern → MusicPlayerApplication (single instance).
-Strategy Pattern → multiple playback strategies.
-Factory Pattern → device connection handling.
-Observer Pattern → notify devices on song playback (if implemented).
-Command Pattern → play/pause/next/previous actions.
+---
+
+## 🚀 Features
+- **Music Library**
+  - Add songs with title, artist, and file path.
+  - Retrieve and manage songs dynamically.
+- **Playlists**
+  - Create playlists and add songs to them.
+  - Load playlists for playback.
+- **Playback Strategies**
+  - **Sequential Playback** → Play songs in order.
+  - **Random Playback** → Shuffle songs for random play.
+  - **Custom Queue** → Create custom order queues.
+- **Device Connectivity**
+  - Connect to different audio devices (e.g., Bluetooth, AUX, etc.).
+- **Playback Controls**
+  - Play, pause, resume songs.
+  - Navigate next/previous tracks.
+
+---
+
+## 🛠️ Design Patterns Used
+- **Singleton Pattern** → Ensures only one instance of `MusicPlayerApplication`.
+- **Factory Pattern** → Handles audio device creation.
+- **Strategy Pattern** → Supports multiple playback strategies (Sequential, Random, Custom Queue).
+- **Facade Pattern** → Provides a simplified interface (`MusicPlayerApplication`) for complex operations.
+- **Observer (Optional)** → Can be extended for notifications/events (e.g., song finished).
